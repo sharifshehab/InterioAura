@@ -1,11 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>InterioAura - Redefine Your Space</title>
+
+   <!--  Manrope Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- daisyUI and Tailwind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom CSS -->
+    <style type="text/tailwindcss">
+        @layer utilities {
+            body{
+                font-family: 'Manrope', sans-serif;
+            }
+            /* section heading */
+          .sec-heading {
+            font-weight: 700;
+            line-height: 1.375rem;
+            text-transform: capitalize;
+            color: #494949;
+          }
+          /* section title */
+          .sec-title {            
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 3.438rem;
+            text-transform: capitalize;
+            color: #212121;
+            margin: 18px 0 28px;
+          }
+          /* section description */
+          .sec-description {            
+            font-weight: 500;
+            line-height: 1.625rem;
+            text-transform: capitalize;
+            color: #494949;
+          }
+
+          /* 
+            section-gap-y: 100px 
+          */
+        }
+      </style>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <div class="brand"></div><!-- brand -->
+            <ul></ul>
+        </nav>
+        <div class="hero"></div><!-- hero -->
+    </header>
+    <main>
+        <section>
+            <div></div>
+        </section>
+    </main>
+    <footer></footer>
 </body>
 </html>
