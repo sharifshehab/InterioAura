@@ -93,8 +93,27 @@
   <header>
     <nav>
       <div class="container mx-auto">
-        <div class="navbar bg-base-100 justify-between">
-          <div class="navbar-start"> 
+        
+        <div class="navbar bg-base-100">
+
+          <div class="navbar-start w-full md:w-1/2 justify-between md:justify-start order-1"> <!-- justify-between w-full md:w-1/2 -->
+
+            <div class="dropdown ">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+              <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div> <!-- mobile/tablet menu -->
+
             <div class="brand">
               <a class=" hover:bg-gray-100 text-[32px] font-extrabold text-secondary flex items-center gap-2">
                 <img src="./images/logo.png" alt="">
@@ -102,7 +121,7 @@
               </a>
             </div><!-- brand -->
           </div>
-          <div class="navbar-center hidden lg:flex">
+          <div class="navbar-center hidden lg:flex order-2"> <!--  -->
             <ul class="menu menu-horizontal px-1 text-base text-[#737373]">
               <li><a href="#" class="active-item">Home</a></li>
               <li><a href="#">Services</a></li>
@@ -111,7 +130,7 @@
               <li><a href="#">Contact Us</a></li>
             </ul>
           </div> <!-- menu -->
-          <div class="navbar-end  md:space-x-2 lg:space-x-4 hidden md:flex"> 
+          <div class="navbar-end space-x-4 hidden md:flex order-3"> <!-- navbar-end -->
             <a class="border-2 border-gray-200 rounded-full bg-white p-[10px]"><img src="./images/magnifying glass.png"
                 alt="" class="border-dashed border-2 border-gray-200"></a>
             <a class="border-2 border-gray-200 rounded-full bg-white p-[10px]"><img src="./images/shopping-cart.png"
@@ -121,22 +140,6 @@
               Consult <span class="bg-secondary border-2 border-primary rounded-full p-[8px] inline-block"><img
                   src="./images/up-arrow-white.png" alt=""></span></a>
           </div><!-- buttons -->
-
-          <div class="dropdown dropdown-left">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-              </svg>
-            </div>
-            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] md:mt-16 mt-12 w-52 p-2 shadow-lg">
-              <li><a href="#" class="active-item">Home</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">Blogs</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
-          </div> <!-- mobile/tablet menu -->
         </div>
       </div><!-- container -->
     </nav>
