@@ -72,7 +72,7 @@
             color: #494949;
             padding-bottom: 32px;
           }
-          .intAura-btn{
+          .intAura-btn,.intAura-btn2{
             font-size: 1.25rem;
             font-weight: 800;
             line-height: 1.688rem;
@@ -82,6 +82,9 @@
             align-items: center;
             justify-content: center;
             gap: 8px;
+          }
+          .intAura-btn2{
+            padding: 0;
           }
           /* active menu item */
           .active-item{
@@ -110,7 +113,7 @@
             </div><!-- brand -->
           </div>
           <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1 text-base text-[#737373]">
+            <ul class="menu menu-horizontal px-1 text-base text-plainText">
               <li><a href="#" class="active-item">Home</a></li>
               <li><a href="#">Services</a></li>
               <li><a href="#">Portfolio</a></li>
@@ -219,7 +222,7 @@
       </div><!-- container -->
     </section><!-- about section end -->
 
-    <section class="pt-24 bg-[#f4f4f4]">
+    <section class="py-24 bg-[#f4f4f4]">
       <div class="container mx-auto">
         <div class="work-wrap">
           <div class="title text-center">
@@ -259,6 +262,67 @@
       </div><!-- container -->
     </section><!-- work-process section end -->
 
+    <section class="pt-24 bg-white">
+      <div class="container mx-auto">
+        <div class="portfolio-wrap pb-24">
+          <div class="title text-center">
+            <a class="sec-heading text-secondaryV2 bg-primaryV3">
+              <span>
+                <img src="./images/right-arrow.png" alt="">
+              </span>
+              Explore our Latest works
+            </a>
+            <h3 class="sec-title text-2xl md:text-4xl">Our Latest Portfolio</h3>
+            <p class="sec-description">The barn house captivates with its blend of rustic charm and
+              modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
+          </div><!-- title -->
+          <div class="portfolios grid grid-cols-1 md:grid-cols-4 gap-6 px-5">
+            <div class="single-portfolio col-auto md:col-span-3 p-6 bg-white rounded-2xl border border-[#E9E9E9] flex flex-col md:flex-row items-center gap-6">
+              <img src="./images/img1.png" alt="" class="border border-dashed border-[#bdbdbd]">
+              <div>
+                <h4 class="text-2xl font-extrabold text-secondaryV2">Commercial</h4>
+                <p class="font-medium text-plainText my-4">The barn house captivates with its blend of rustic charm and
+                  modern. The barn
+                  house captivates with its blend of rustic
+                  charm and modern.</p>
+                <a class="intAura-btn2 cursor-pointer p-0">View
+                  Details
+                  <span class="bg-primary border-2 border-primary rounded-full p-[8px] inline-block">
+                    <img src="./images/up-arrow.png" alt="">
+                  </span>
+                </a>
+              </div>
+            </div><!-- single-portfolio -->
+            <div class="single-portfolio p-6 bg-white rounded-2xl border border-[#E9E9E9]">
+              <img src="./images/img2.png" alt="" class="border border-dashed border-[#bdbdbd]">
+            </div><!-- single-portfolio -->
+            <div class="single-portfolio order-3 md:order-1 p-6 bg-white rounded-2xl border border-[#E9E9E9]">
+              <img src="./images/img3.png" alt="" class="border border-dashed border-[#bdbdbd] mx-auto">
+            </div><!-- single-portfolio -->
+            <div class="single-portfolio order-2 col-auto md:col-span-2 p-6 bg-white rounded-2xl border border-[#E9E9E9] flex flex-col md:flex-row items-center gap-6">
+              <img src="./images/img4.png" alt="" class="border border-dashed border-[#bdbdbd]">
+              <div>
+                <h4 class="text-2xl font-extrabold text-secondaryV2">Commercial</h4>
+                <p class="font-medium text-plainText my-4">The barn house captivates with its blend of rustic charm and
+                  modern. The barn
+                  house captivates with its blend of rustic
+                  charm and modern.</p>
+                <a class="intAura-btn2 cursor-pointer p-0">View
+                  Details
+                  <span class="bg-primary border-2 border-primary rounded-full p-[8px] inline-block">
+                    <img src="./images/up-arrow.png" alt="">
+                  </span>
+                </a>
+              </div>
+            </div><!-- single-portfolio -->
+            <div class="single-portfolio order-1 md:order-3 p-6 bg-white rounded-2xl border border-[#E9E9E9]">
+              <img src="./images/img5.png" alt="" class="border border-dashed border-[#bdbdbd] mx-auto">
+            </div><!-- single-portfolio -->
+          </div><!-- portfolios -->
+        </div><!-- contact-wrap -->
+      </div><!-- container -->
+    </section><!-- portfolio section end -->
+
     <section class="pt-24 bg-contactBG bg-no-repeat bg-cover">
       <div class="container mx-auto">
         <div class="contact-wrap pb-24">
@@ -292,7 +356,7 @@
               </div>
               <div class="col-span-1 md:col-span-2">
                 <textarea placeholder="Write your message here" rows="12" cols="50"
-                  class="rounded-[32px] w-full p-4 focus:outline focus:outline-2 focus:outline-offset-4 focus:outline-[#c3c3c9]"></textarea>
+                  class="rounded-[32px] w-full p-4 resize-none border border-[#d2d4d7] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-[#c3c3c9]"></textarea>
               </div>
 
               <div class="mt-6 md:col-span-2">
@@ -303,10 +367,11 @@
               </div>
             </form>
           </div><!-- form-wrap -->
-
         </div><!-- contact-wrap -->
       </div><!-- container -->
     </section><!-- contact section end -->
+
+
   </main>
   <footer class="py-24 px-5 bg-[#1C1C1C]">
     <div class="container mx-auto">
@@ -315,7 +380,7 @@
           <img src="./images/logo.png" alt="">
           InterioAura
         </a>
-        <p class="font-medium text-[#737373] text-center">The barn house captivates with its blend of rustic charm and
+        <p class="font-medium text-plainText text-center">The barn house captivates with its blend of rustic charm and
           modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
       </div><!-- footer-logo -->
       <div class="footer-menu">
@@ -329,7 +394,8 @@
       </div><!-- footer-menu -->
 
       <div class="footer-button text-center">
-        <a class="intAura-btn text-[#1C1C1C] bg-primary cursor-pointer transition ease-in-out delay-100 hover:bg-secondary hover:text-primary">Book
+        <a
+          class="intAura-btn text-[#1C1C1C] bg-primary cursor-pointer transition ease-in-out delay-100 hover:bg-secondaryV2 hover:text-primary">Book
           Consult <span class="bg-secondary border-2 border-primary rounded-full p-[8px] inline-block"><img
               src="./images/up-arrow-white.png" alt=""></span></a>
       </div><!-- footer-button -->
