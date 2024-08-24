@@ -26,15 +26,11 @@
             primaryV3: '#ABEF5F33',
             secondary: '#212121',
             secondaryV2: '#494949',
-            plainText: '#737373',
-          },
-          fontFamily: {
-            Manrope: 'Manrope',
+            plainText: '#737373'
           },
           backgroundImage: {
-            'contactBG': "url('./images/bg.jpg')",
-
-          },
+            'contactBG': "url('./images/bg.jpg')"
+          }
         }
       }
     }
@@ -45,12 +41,14 @@
             body{
                 font-family: 'Manrope', sans-serif;
             }
-            /* section heading */
+          .sec-heading, .sec-title, .sec-description {
+             text-transform: capitalize;
+             color: #494949;
+          }
+           /* section heading */
           .sec-heading {
             font-weight: 700;
             line-height: 1.375rem;
-            text-transform: capitalize;
-            color: #494949;
             padding: 10px 20px;
             border-radius: 2rem;
             display: inline-flex;
@@ -61,16 +59,13 @@
           /* section title */
           .sec-title {            
             font-weight: 800;
-            text-transform: capitalize;
-            color: #212121;
+            color: #212121; /*  */
             margin: 18px 0 28px;
           }
           /* section description */
           .sec-description {            
             font-weight: 500;
             line-height: 1.625rem;
-            text-transform: capitalize;
-            color: #494949;
             padding-bottom: 32px;
           }
           .intAura-btn,.intAura-btn2{
@@ -93,12 +88,15 @@
             background-color: transparent;
             color: #494949;
           }
+          /* header{
+            background: linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%);
+          } */
         }
       </style>
 </head>
 
 <body>
-  <header class="bg-gradient-to-b from-[#FFFFFF] to-[#FFFFFF00] pt-12 pb-20">
+  <header class="bg-gradient-to-b from-[#FFFFFF] to-[#FFFFFF00] pt-12 pb-20"> <!--  -->
     <div class="container mx-auto">
       <nav>
         <div class="navbar justify-between">
@@ -120,10 +118,10 @@
             </ul>
           </div> <!-- menu -->
           <div class="navbar-end  md:space-x-2 lg:space-x-4 hidden md:flex">
-            <a class="border-2 border-gray-200 rounded-full bg-white p-[10px] cursor-pointer"><img src="./images/magnifying glass.png"
-                alt="" class="border-dashed border-2 border-gray-200"></a>
-            <a class="border-2 border-gray-200 rounded-full bg-white p-[10px] cursor-pointer"><img src="./images/shopping-cart.png"
-                alt="" class="border-dashed border-2 border-gray-200"></a>
+            <a class="border-2 border-gray-200 rounded-full bg-white p-[10px] cursor-pointer"><img
+                src="./images/magnifying glass.png" alt="" class="border-dashed border-2 border-gray-200"></a>
+            <a class="border-2 border-gray-200 rounded-full bg-white p-[10px] cursor-pointer"><img
+                src="./images/shopping-cart.png" alt="" class="border-dashed border-2 border-gray-200"></a>
             <a
               class="intAura-btn text-[#1C1C1C] bg-primary cursor-pointer transition ease-in-out delay-100 hover:bg-secondary hover:text-primary">Book
               Consult <span class="bg-secondary border-2 border-primary rounded-full p-[8px] inline-block"><img
@@ -132,18 +130,20 @@
 
           <div class="dropdown dropdown-left">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg viewBox="-2.4 -2.4 28.80 28.80" class="h-10 w-10 border rounded-full" fill="none" xmlns="http://www.w3.org/2000/svg"
-                transform="matrix(-1, 0, 0, 1, 0, 0)rotate(0)">
+              <svg viewBox="-2.4 -2.4 28.80 28.80" class="h-10 w-10 border rounded-full" fill="none"
+                xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)rotate(0)">
                 <g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)">
                   <rect x="-2.4" y="-2.4" width="28.80" height="28.80" rx="14.4" fill="#ffffff" strokewidth="0"></rect>
                 </g>
-                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#9d0606" stroke-width="0.144">
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#9d0606"
+                  stroke-width="0.144">
                 </g>
                 <g id="SVGRepo_iconCarrier">
-                  <path d="M4 6H20M4 12H14M4 18H9" stroke="#212121" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 6H20M4 12H14M4 18H9" stroke="#212121" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round">
                   </path>
                 </g>
-              </svg>             
+              </svg>
             </div>
             <ul tabindex="0"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] md:mt-16 mt-12 w-52 p-2 shadow-lg">
@@ -161,9 +161,11 @@
           <div class="hero-content text-center">
             <div class="w-full md:w-3/4">
               <img src="./images/banner.png" alt="" class="mt-10 mb-8 mx-auto">
-              <h2 class="text-3xl md:leading-snug md:text-6xl  text-secondary font-extrabold">Artful Sanctuary With Elegant Design And Functionality</h2>
-              <p class="mt-5 md:mt-9 mb-8 text-secondaryV2 font-medium">Explore our innovative craftsmen to bring your vision to life. Space that is aesthetically pleasing with elegant
-              solutions, that resonate with your personality.</p>
+              <h2 class="text-3xl md:leading-snug md:text-6xl  text-secondary font-extrabold">Artful Sanctuary With
+                Elegant Design And Functionality</h2>
+              <p class="mt-5 md:mt-9 mb-8 text-secondaryV2 font-medium">Explore our innovative craftsmen to bring your
+                vision to life. Space that is aesthetically pleasing with elegant
+                solutions, that resonate with your personality.</p>
               <a
                 class="intAura-btn w-full md:w-auto bg-primaryV2 border-2 border-primary cursor-pointer transition ease-in-out delay-100 hover:bg-secondary hover:text-primary">View
                 Details
@@ -180,8 +182,8 @@
   <main>
     <section class="pt-24 bg-[#f4f4f4]">
       <div class="container mx-auto">
-        <div class="about-wrap flex items-center justify-center flex-wrap md:flex-nowrap gap-10">
-          <div class="about-content basis-11/12 md:basis-2/5">
+        <div class="about-wrap flex items-center justify-center flex-wrap lg:flex-nowrap gap-10 px-5">
+          <div class="about-content basis-11/12 lg:basis-2/5 ">
             <div class="title text-center md:text-left">
               <div class="relative ">
                 <img src="./images/Vector.png" alt=""
@@ -193,27 +195,32 @@
                   About Us
                 </a>
               </div><!-- relative -->
-              <h3 class="sec-title text-2xl md:text-4xl md:leading-snug">Redefining Your Space into Stories And Memories</h3>
-              <p class="sec-description">Every home has a story to tell and our vision is to bring those stories to life through thoughtful interiors. We craft environments that reflect your personality with your lifestyle.</p>
+              <h3 class="sec-title text-2xl md:text-4xl md:leading-snug">Redefining Your Space into Stories And Memories
+              </h3>
+              <p class="sec-description">Every home has a story to tell and our vision is to bring those stories to life
+                through thoughtful interiors. We craft environments that reflect your personality with your lifestyle.
+              </p>
             </div><!-- title -->
             <div class="about-features space-y-6">
               <div class="about-single-feature flex items-center gap-4 bg-white p-6 rounded-2xl">
                 <img src="./images/commercial.png" alt="">
                 <div>
                   <h5 class="text-xl font-extrabold text-secondaryV2">Commercial</h5>
-                  <p class="font-medium text-plainText">dynamic and functional commercial space that exceed your expectations for office to retail environments.</p>
+                  <p class="font-medium text-plainText">dynamic and functional commercial space that exceed your
+                    expectations for office to retail environments.</p>
                 </div>
               </div><!-- about-single-feature -->
               <div class="about-single-feature flex items-center gap-4 bg-white p-6 rounded-2xl">
                 <img src="./images/residential.png" alt="">
                 <div>
                   <h5 class="text-xl font-extrabold text-secondaryV2">Residential</h5>
-                  <p class="font-medium text-plainText">Homes that are transformed into personalized havens of style and comfort blend with your distinctness.</p>
+                  <p class="font-medium text-plainText">Homes that are transformed into personalized havens of style and
+                    comfort blend with your distinctness.</p>
                 </div>
               </div><!-- about-single-feature -->
             </div><!-- about-features -->
           </div><!-- about-content -->
-          <div class="about-image basis-11/12 md:basis-3/5">
+          <div class="about-image basis-11/12  lg:basis-3/5">
             <img src="./images/Rectangle.png" alt="" class="border border-dashed border-[#bdbdbd] w-full">
           </div><!-- about-image -->
         </div><!-- about-wrap -->
@@ -231,30 +238,35 @@
               How we work
             </a>
             <h3 class="sec-title text-2xl md:text-4xl">Our Works Process</h3>
-            <p class="sec-description">Our team of skilled designers and artisans works closely with you to craft environments <br>tailored to your unique needs to
-            ensure every details</p>
+            <p class="sec-description">Our team of skilled designers and artisans works closely with you to craft
+              environments <br>tailored to your unique needs to
+              ensure every details</p>
           </div><!-- title -->
           <div class="work-process-wrap flex flex-wrap md:flex-nowrap gap-6">
             <div class="single-work text-[#1C1C1C] p-6 rounded-2xl bg-pink-300">
               <img src="./images/concept.png" alt="">
               <h6 class="text-xl font-extrabold my-3">Concept</h6>
-              <p class="text-secondaryV2">Our approach to concept generation starts with your, needs and environment.</p>
+              <p class="text-secondaryV2">Our approach to concept generation starts with your, needs and environment.
+              </p>
             </div><!-- single-work -->
             <div class="single-work text-[#1C1C1C] p-6 rounded-2xl bg-yellow-200">
               <img src="./images/flow-chart.png" alt="">
               <h6 class="text-xl font-extrabold my-3">Design Process</h6>
-              <p class="text-secondaryV2">We will craft designs that resonate perfectly with the appearance, comfort, and functionality
-.</p>
+              <p class="text-secondaryV2">We will craft designs that resonate perfectly with the appearance, comfort,
+                and functionality
+                .</p>
             </div><!-- single-work -->
             <div class="single-work text-[#1C1C1C] p-6 rounded-2xl bg-teal-200">
               <img src="./images/vision.png" alt="">
               <h6 class="text-xl font-extrabold my-3">Supervision</h6>
-              <p class="text-secondaryV2">We keep a keen eye on details to ensure quality for every project from start to finish.</p>
+              <p class="text-secondaryV2">We keep a keen eye on details to ensure quality for every project from start
+                to finish.</p>
             </div><!-- single-work -->
             <div class="single-work text-[#1C1C1C] p-6 rounded-2xl bg-blue-400">
               <img src="./images/budget-planning.png" alt="">
               <h6 class="text-xl font-extrabold my-3">Budget Planning</h6>
-              <p class="text-secondaryV2">Always make sure that the cost is not overwhelming or unreasonable to bear.</p>
+              <p class="text-secondaryV2">Always make sure that the cost is not overwhelming or unreasonable to bear.
+              </p>
             </div><!-- single-work -->
           </div><!-- work-process-wrap -->
         </div><!-- work-wrap -->
@@ -272,16 +284,19 @@
               Explore our Latest works
             </a>
             <h3 class="sec-title text-2xl md:text-4xl">Our Latest Portfolio</h3>
-            <p class="sec-description">See our latest portfolio on how we have transformed visions into stunning sanctuaries. <br> We are always committed to
-            excellence and our unique approach to design.</p>
+            <p class="sec-description">See our latest portfolio on how we have transformed visions into stunning
+              sanctuaries. <br> We are always committed to
+              excellence and our unique approach to design.</p>
           </div><!-- title -->
           <div class="portfolios grid grid-cols-1 md:grid-cols-4 gap-6">
+
             <div
-              class="single-portfolio col-auto md:col-span-3 p-6 bg-white rounded-2xl border border-[#E9E9E9] flex flex-col md:flex-row items-center gap-6">
+              class="single-portfolio col-auto md:col-span-3 p-6 bg-white rounded-2xl border border-[#E9E9E9] flex flex-col md:flex-row md:items-center gap-6">
               <img src="./images/img1.png" alt="" class="border border-dashed border-[#bdbdbd]">
               <div>
                 <h4 class="text-2xl font-extrabold text-secondaryV2">Commercial</h4>
-                <p class="font-medium text-plainText my-4">dynamic and functional commercial space that exceeds your expectations for office to retail environments.</p>
+                <p class="font-medium text-plainText my-4">dynamic and functional commercial space that exceeds your
+                  expectations for office to retail environments.</p>
                 <a class="intAura-btn2 cursor-pointer p-0">View
                   Details
                   <span class="bg-primary border-2 border-primary rounded-full p-[8px] inline-block">
@@ -289,19 +304,23 @@
                   </span>
                 </a>
               </div>
-            </div><!-- single-portfolio -->
-            <div class="single-portfolio p-6 bg-white rounded-2xl border border-[#E9E9E9]">
-              <img src="./images/img2.png" alt="" class="border border-dashed border-[#bdbdbd]">
-            </div><!-- single-portfolio -->
-            <div class="single-portfolio order-3 md:order-1 p-6 bg-white rounded-2xl border border-[#E9E9E9]">
-              <img src="./images/img3.png" alt="" class="border border-dashed border-[#bdbdbd] mx-auto">
             </div><!-- single-portfolio -->
             <div
-              class="single-portfolio order-2 col-auto md:col-span-2 p-6 bg-white rounded-2xl border border-[#E9E9E9] flex flex-col md:flex-row items-center gap-6">
-              <img src="./images/img4.png" alt="" class="border border-dashed border-[#bdbdbd]">
+              class="single-portfolio p-6 bg-white rounded-2xl border border-[#E9E9E9] flex items-center justify-center">
+              <img src="./images/img2.png" alt="" class="border border-dashed border-[#bdbdbd]">
+            </div><!-- single-portfolio -->
+
+            <div
+              class="single-portfolio order-3 md:order-1 p-6 bg-white rounded-2xl border border-[#E9E9E9] flex items-center justify-center">
+              <img src="./images/img3.png" alt="" class="border border-dashed border-[#bdbdbd]">
+            </div><!-- single-portfolio -->
+            <div
+              class="single-portfolio order-2 col-auto md:col-span-2 p-6 bg-white rounded-2xl border border-[#E9E9E9] flex flex-col lg:flex-row items-center gap-6">
+              <img src="./images/img4.png" alt="" class="border border-dashed border-[#bdbdbd] w-full">
               <div>
                 <h4 class="text-2xl font-extrabold text-secondaryV2">Residential</h4>
-                <p class="font-medium text-plainText my-4">Homes that are transformed into personalized havens of style and comfort blend with your distinctness.</p>
+                <p class="font-medium text-plainText my-4">Homes that are transformed into personalized havens of style
+                  and comfort blend with your distinctness.</p>
                 <a class="intAura-btn2 cursor-pointer p-0">View
                   Details
                   <span class="bg-primary border-2 border-primary rounded-full p-[8px] inline-block">
@@ -310,8 +329,9 @@
                 </a>
               </div>
             </div><!-- single-portfolio -->
-            <div class="single-portfolio order-1 md:order-3 p-6 bg-white rounded-2xl border border-[#E9E9E9]">
-              <img src="./images/img5.png" alt="" class="border border-dashed border-[#bdbdbd] mx-auto">
+            <div
+              class="single-portfolio order-1 md:order-3 p-6 bg-white rounded-2xl border border-[#E9E9E9] flex items-center justify-center">
+              <img src="./images/img5.png" alt="" class="border border-dashed border-[#bdbdbd]">
             </div><!-- single-portfolio -->
           </div><!-- portfolios -->
         </div><!-- portfolio-wrap -->
@@ -329,8 +349,9 @@
               Why Choose Us
             </a>
             <h3 class="sec-title text-2xl md:text-4xl">Our Signature Qualities</h3>
-            <p class="sec-description">What sets us apart is our exceptional interior design experience, marked by our ability to deliver creativity <br>with
-            precision. Spaces that are both elegance and functional.</p>
+            <p class="sec-description">What sets us apart is our exceptional interior design experience, marked by our
+              ability to deliver creativity <br>with
+              precision. Spaces that are both elegance and functional.</p>
           </div><!-- title -->
           <div class="flex flex-col md:flex-row items-center gap-12">
 
@@ -359,7 +380,8 @@
                 </svg>
                 <div>
                   <h6 class="text-xl text-secondary font-extrabold my-2">Professional Team</h6>
-                  <p class="text-secondaryV2">experienced and highly innovative team with an eye for a unique approach.</p>
+                  <p class="text-secondaryV2">experienced and highly innovative team with an eye for a unique approach.
+                  </p>
                 </div>
               </div>
             </div><!-- why-us-first -->
@@ -379,7 +401,8 @@
                 </svg>
                 <div>
                   <h6 class="text-xl text-secondary font-extrabold my-2">Transparent Pricing</h6>
-                  <p class="text-secondaryV2">with clear, transparent estimates to ensure you exactly what to expect.</p>
+                  <p class="text-secondaryV2">with clear, transparent estimates to ensure you exactly what to expect.
+                  </p>
                 </div>
               </div>
               <div class="divider font-black text-primary">AND</div>
@@ -393,7 +416,8 @@
                 </svg>
                 <div>
                   <h6 class="text-xl text-secondary font-extrabold my-2">5 Years Warranty</h6>
-                  <p class="text-secondaryV2">even after the project's completion, we'll be by your side for additional support.</p>
+                  <p class="text-secondaryV2">even after the project's completion, we'll be by your side for additional
+                    support.</p>
                 </div>
               </div>
             </div><!-- why-us-last -->
@@ -413,8 +437,9 @@
               Let’s Connect
             </a>
             <h3 class="sec-title text-2xl md:text-4xl">Let’s Discuss Some Ideas</h3>
-            <p class="sec-description">We are always waiting to hear from you and to provide the most suitable solution<br> to your request. Droop us a message to
-            connect with you.</p>
+            <p class="sec-description">We are always waiting to hear from you and to provide the most suitable
+              solution<br> to your request. Droop us a message to
+              connect with you.</p>
           </div><!-- title -->
           <div class="form-wrap">
             <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -457,8 +482,9 @@
           <img src="./images/logo.png" alt="">
           InterioAura
         </a>
-        <p class="font-medium text-plainText text-center">Explore our innovative craftsmen to bring your vision to life. Space that is<br> aesthetically pleasing
-        with elegant solutions, that resonate with your personality.</p>
+        <p class="font-medium text-plainText text-center">Explore our innovative craftsmen to bring your vision to life.
+          Space that is<br> aesthetically pleasing
+          with elegant solutions, that resonate with your personality.</p>
       </div><!-- footer-logo -->
       <div class="footer-menu">
         <ul class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-28 my-12 text-[#E9E9E9]">
